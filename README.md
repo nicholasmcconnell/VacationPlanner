@@ -29,5 +29,5 @@ https://jamesnicktyler.herokuapp.com/
 
 # GitHub Repo
 
-https://github.com/tdj03001/VacationPlanner
+https://github.com/nicholasmcconnell/VacationPlanner
 
