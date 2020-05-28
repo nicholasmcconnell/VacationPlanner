@@ -1,6 +1,4 @@
-# Vacationer
-
-Thank you for visiting our website!
+## Vacationer
 
 # Purpose
 
