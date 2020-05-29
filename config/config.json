@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "yourRootPassword",
-    "database": "vacation_db",
-    "host": "127.0.0.1",
+    "username": "ubm9r5a12lgk3qx0",
+    "password": "c99suuh8wkpb7oti",
+    "database": "xvkr8im7otbhrrho",
+    "host": "q3vtafztappqbpzn.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "production": {
