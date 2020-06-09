@@ -113,7 +113,7 @@ const apiCall = (categories, coordinates) => {
   return data;
 };
 const itineraryData = (apiData, userCityDays) => {
-  console.log(apiData);
+ 
   const xidArr = [];
   apiData.forEach(array => {
     for (var i = 0; i <= userCityDays.days; i++) {
