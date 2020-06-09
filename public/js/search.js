@@ -161,8 +161,6 @@ function display(itineraryObjArr, userCityDays) {
 
   let j = 1;
   for (let i = 0; i <= itineraryObjArr.length; i++) {
-    console.log(itineraryObjArr);
-    console.log(typeof userCityDays.days);
 
     let days = parseInt(userCityDays.days);
 
