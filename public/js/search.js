@@ -6,7 +6,6 @@ const getItems = () => {
 
   let city = localStorage.getItem("city");
   let days = localStorage.getItem("days")
-  console.log(city)
 
   $(`input[value=${city}]`).prop('checked', true);
   $(`input[value=${days}]`).prop('checked', true);
@@ -14,9 +13,6 @@ const getItems = () => {
 }
 
 getItems();
-
-
-  
 
   let userCityDays;
   let userCategories;
