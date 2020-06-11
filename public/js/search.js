@@ -1,15 +1,23 @@
 $(document).ready(function () {
   // localStorage.getItem("city", userCityDays.city);
   // localStorage.getItem("days", userCityDays.days);
+
+
   
 const getItems = () => {
+  $('#alertItinerary').hide();
 
-  let city = localStorage.getItem("city");
-  let days = localStorage.getItem("days")
+  if(!localStorage.getItem('city')){
+    $('#alertItinerary').hide();
+  } else {
+    $('#alertItinerary').show();
+    let city = localStorage.getItem("city");
+    let days = localStorage.getItem("days")
+  
+    $(`input[value=${city}]`).prop('checked', true);
+    $(`input[value=${days}]`).prop('checked', true);
 
-  $(`input[value=${city}]`).prop('checked', true);
-  $(`input[value=${days}]`).prop('checked', true);
-
+  }
 }
 
 getItems();
@@ -65,7 +73,7 @@ getItems();
     if (t > 0) {
       control(userCategoriesFinal, userCityDays)
     } else {
-      alert("You forgot to choose activities to add to your itinerary!")
+
       window.location.reload();
     }
 
@@ -76,6 +84,7 @@ getItems();
   async function control(userCategoriesFinal, userCityDays) {
     try {
       // debugger;
+      localStorage.clear();
       const categories = await apiCategoriesArrayMaker(userCategoriesFinal);
       const coordinates = await getCoordinates(userCityDays);
       const apiData = await apiCall(categories, coordinates);
