@@ -1,12 +1,27 @@
 $(document).ready(function () {
   // localStorage.getItem("city", userCityDays.city);
   // localStorage.getItem("days", userCityDays.days);
+  
+const getItems = () => {
+
+  let city = localStorage.getItem("city");
+  let days = localStorage.getItem("days")
+  console.log(city)
+
+  $(`input[value=${city}]`).prop('checked', true);
+  $(`input[value=${days}]`).prop('checked', true);
+
+}
+
+getItems();
+
+
+  
 
   let userCityDays;
   let userCategories;
   let userCategoriesArr;
   let userCategoriesFinal;
-
 
   $("#submit").on("click", function () {
     $(".box").hide();
@@ -23,8 +38,8 @@ $(document).ready(function () {
       //   .trim()
     };
 
-
-
+    localStorage.setItem("city", $('input[name="city"]:checked').val());
+    localStorage.setItem("days", $('input[name="days"]:checked').val());
 
     userCategories = {
       bar: $("#nightlife").is(":checked"),
@@ -49,15 +64,13 @@ $(document).ready(function () {
       if (value === true) {
         t++;
       }
-      console.log("1")
     }
     
     if (t > 0) {
-      console.log("2")
       control(userCategoriesFinal, userCityDays)
     } else {
-      alert("choose a category")
-      location.reload();
+      alert("You forgot to choose activities to add to your itinerary!")
+      window.location.reload();
     }
 
   });
