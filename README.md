@@ -7,7 +7,6 @@ The Vacationer app helps users find things to do and places to go when planning 
 
 https://vacationer-nrm.herokuapp.com/
 
-
 ## GitHub Repo
 
 https://github.com/nicholasmcconnell/VacationPlanner
