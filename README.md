@@ -3,12 +3,12 @@
 ## Purpose
 
 The Vacationer app helps users find things to do and places to go when planning a vacation.  The Open Trip Map API pulls location specific data about restaurants, night life, music, hotels, and museums and displays them in a daily itinerary format. Vacation Planner simplifies the process of figuring out what to do on your next trip!
-# Live site
+## Live site
 
 https://vacationer-nrm.herokuapp.com/
 
 
-# GitHub Repo
+## GitHub Repo
 
 https://github.com/nicholasmcconnell/VacationPlanner
 ## Usage
